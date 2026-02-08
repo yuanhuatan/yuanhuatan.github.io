@@ -19,4 +19,9 @@ fi
 echo "Copying hexo/public to repo root ..."
 cp -r "$PUBLIC_DIR"/. "$REPO_ROOT/"
 
-echo "Done. Commit and push to publish to GitHub Pages."
+COMMIT_MSG="${*:-修改博客}"
+cd "$REPO_ROOT"
+git add .
+git commit -m "$COMMIT_MSG"
+git push
+echo "Done. Published to GitHub Pages."
