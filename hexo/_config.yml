@@ -50,7 +50,7 @@ theme: next
 
 # 前端密码保护（弱保护，仅防随便点进来的人）
 # 留空则关闭。开启时请先运行 node ../scripts/generate-pass-hash.js 你的密码 得到 hash 填到下面
-password_protect: true
+password_protect: false
 password_hash: "0b6494ee4cabbe7b39964bcfc1f54bb367404cd487483859411b9baa9bb0dcd8"
 
 deploy:
