@@ -33,7 +33,7 @@
 
   var overlay = document.createElement('div');
   overlay.id = 'blog-password-overlay';
-  overlay.style.cssText = 'position:fixed;inset:0;background:#1a1a1a;z-index:99999;display:flex;align-items:center;justify-content:center;font-family:sans-serif;';
+  overlay.style.cssText = 'position:fixed;inset:0;background:#1a1a1a;z-index:99999;display:flex;align-items:center;justify-content:center;font-family:sans-serif;visibility:visible;';
   overlay.innerHTML = '<div style="text-align:center;color:#eee;">' +
     '<p style="margin-bottom:12px;">请输入访问密码</p>' +
     '<input type="password" id="blog-password-input" placeholder="密码" style="padding:8px 12px;margin-right:8px;border:1px solid #555;background:#222;color:#eee;border-radius:4px;" />' +
