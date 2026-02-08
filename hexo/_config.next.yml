@@ -22,3 +22,19 @@ back2top:
 motion:
   enable: true
   async: false
+
+# 本文字数 / 阅读时间
+symbols_count_time:
+  separated_meta: true
+  item_text_post: true
+  item_text_total: false
+  awl: 2
+  wpm: 275
+
+# 本地搜索（依赖 hexo-generator-search 生成的 search.xml）
+local_search:
+  enable: true
+  trigger: auto
+  top_n_per_article: 1
+  unescape: false
+  preload: false

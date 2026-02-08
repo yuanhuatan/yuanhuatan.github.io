@@ -35,7 +35,7 @@ writing:
     exclude: ''
   filename_case: 0
   render_drafts: false
-  post_asset_folder: false
+  post_asset_folder: true
   relative_link: false
   future: true
   highlight:
@@ -45,6 +45,43 @@ writing:
     tab_replace: ''
     wrap: true
     hljs: false
+
+# markdown-it 渲染器（脚注、上标下标、emoji 等）
+markdown:
+  render:
+    html: true
+    xhtmlOut: false
+    breaks: true
+    linkify: true
+    typographer: true
+  plugins:
+    - markdown-it-footnote
+    - markdown-it-emoji
+    - markdown-it-sub
+    - markdown-it-sup
+
+# 摘要：文中写 <!-- more --> 之前为摘要；hexo-excerpt 会生成自动摘要
+excerpt:
+  depth: 2
+
+# 本地搜索数据（供 NexT 本地搜索使用）
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
+
+# sitemap 与 RSS
+sitemap:
+  path: sitemap.xml
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  content: true
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
 
 theme: next
 
