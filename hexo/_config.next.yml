@@ -3,9 +3,10 @@
 
 scheme: Muse
 
-# 自定义注入（密码保护脚本放在 bodyEnd，确保 body 已存在）
+# 自定义注入（密码保护 + 侧栏文章清单）
 custom_file_path:
   bodyEnd: source/_data/body-end.swig
+  sidebar: source/_data/sidebar.swig
 
 sidebar:
   position: left
