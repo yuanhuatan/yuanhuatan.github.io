@@ -3,6 +3,10 @@
 
 scheme: Muse
 
+# 自定义 head 注入（用于前端密码保护等）
+custom_file_path:
+  head: source/_data/head.swig
+
 sidebar:
   position: left
   display: post
