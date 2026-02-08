@@ -1,0 +1,19 @@
+# NexT 主题配置（与当前站点一致：Muse 方案）
+# https://theme-next.js.org/docs/
+
+scheme: Muse
+
+sidebar:
+  position: left
+  display: post
+  padding: 18
+  offset: 12
+
+back2top:
+  enable: true
+  sidebar: false
+  scrollpercent: false
+
+motion:
+  enable: true
+  async: false

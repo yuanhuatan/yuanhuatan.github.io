@@ -13,24 +13,24 @@
 <link rel="stylesheet" href="/css/main.css">
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"yuanhuatan.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
   <meta name="description" content="记录空间">
 <meta property="og:type" content="website">
 <meta property="og:title" content="卡巴资料库">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:url" content="https://yuanhuatan.github.io/">
 <meta property="og:site_name" content="卡巴资料库">
 <meta property="og:description" content="记录空间">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="titian">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="https://yuanhuatan.github.io/">
 
 
 <script id="page-configurations">
@@ -97,6 +97,7 @@
       <h1 class="site-title">卡巴资料库</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
+      <p class="site-subtitle" itemprop="description">记录空间</p>
   </div>
 
   <div class="site-nav-right">
@@ -109,15 +110,15 @@
 
 
 <nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
+  <ul id="menu" class="menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
 
   </li>
   </ul>
@@ -147,7 +148,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/09/19/java-web1/">
+    <link itemprop="mainEntityOfPage" href="https://yuanhuatan.github.io/2023/09/19/java-web1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -167,13 +168,19 @@
         <div class="post-meta">
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
+                <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2023-09-19 21:42:12 / 修改时间：22:22:07" itemprop="dateCreated datePublished" datetime="2023-09-19T21:42:12+08:00">2023-09-19</time>
+              <time title="创建时间：2023-09-19 21:42:12" itemprop="dateCreated datePublished" datetime="2023-09-19T21:42:12+08:00">2023-09-19</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2026-02-08 20:24:10" itemprop="dateModified" datetime="2026-02-08T20:24:10+08:00">2026-02-08</time>
+              </span>
 
           
 
@@ -186,84 +193,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="Java网络编程"><a href="#Java网络编程" class="headerlink" title="Java网络编程"></a>Java网络编程</h1><p>在JavaSE阶段，我们学习了I&#x2F;O流，既然I&#x2F;O流如此强大，那么能否跨越不同的主机进行I&#x2F;O操作呢？这就要提到Java的网络编程了。</p>
-<p><strong>注意：</strong>本章会涉及到<code>计算机网络</code>相关内容（只会讲解大致内容，不会完整的讲解计算机网络知识）</p>
-<h2 id="计算机网络基础"><a href="#计算机网络基础" class="headerlink" title="计算机网络基础"></a>计算机网络基础</h2><p>利用通信线路和通信设备，将地理位置不同的、功能独立的多台计算机互连起来，以功能完善的网络软件来实现资源共享和信息传递，就构成了计算机网络系统。</p>
-<p><img src="https://s2.loli.net/2023/03/06/A8VY3bs1LvmSqyi.jpg" alt="img"></p>
-<p>比如我们家里的路由器，通过将我们的设备（手机、平板、电脑、电视剧）连接到路由器，来实现对互联网的访问。实际上，我们的路由器连接在互联网上，而我们的设备又连接了路由器，这样我们的设备就可以通过路由器访问到互联网了。通过网络，我们可以直接访问互联网上的另一台主机，比如我们要把QQ的消息发送给我们的朋友，或是通过远程桌面管理来操作另一台电脑，也可以是连接本地网络上的打印机。</p>
-<p>既然我们可以通过网络访问其他计算机，那么如何区别不同的计算机呢？通过IP地址，我们就可以区分不同的计算机了：</p>
-<p><img src="https://s2.loli.net/2023/08/14/H1GdaBwiMjz8vmZ.png" alt="image-20230814155322711"></p>
-<p>每一台电脑在同一个网络上都有一个自己的IP地址，用于区别于其他的电脑，我们可以通过对方主机的IP地址对其进行访问。那么我手机连接的移动流量，能访问到连接家里路由器的电脑吗？（不能，因为他们不属于同一个网络）</p>
-<p>而我们的电脑上可能运行着大量的程序，每一个程序可能都需要通过网络来访问其他计算机，那这时该如何区分呢？我们可以通过端口号来区分：</p>
-<p><img src="https://s2.loli.net/2023/03/06/EQyPUkrhZBic49I.jpg" alt="img"></p>
-<p>因此，我们一般看到的是这样的：<code>192.168.0.11:8080</code>，通过<code>IP:端口</code>的形式来访问目标主机上的一个应用程序服务。注意端口号只能是0-65535之间的值！</p>
-<p>IP地址分为IPv4和IPv6，IPv4类似于<code>192.168.0.11</code>，我们上面提到的例子都是使用的IPv4，它一共有四组数字，每组数字占8个bit位，IPv4地址<code>0.0.0.0</code>表示为2进制就是：00000000.00000000.00000000.00000000，共32个bit，最大为<code>255.255.255.255</code>，实际上，IPv4能够表示的所有地址，早就已经被用完了。IPv6能够保存128个bit位，因此它也可以表示更多的IP地址，一个IPv6地址看起来像这样：<code>1030::C9B4:FF12:48AA:1A2B</code>，目前也正在向IPv6的阶段过度。</p>
-<p>TCP和UDP是两种不同的传输层协议：</p>
-<ul>
-<li>TCP：当一台计算机想要与另一台计算机通讯时，两台计算机之间的通信需要畅通且可靠（会进行三次握手，断开也会进行四次挥手），这样才能保证正确收发数据，因此TCP更适合一些可靠的数据传输场景。</li>
-<li>UDP：它是一种无连接协议，数据想发就发，而且不会建立可靠传输，也就是说传输过程中有可能会导致部分数据丢失，但是它比TCP传输更加简单高效，适合视频直播之类的。</li>
-</ul>
-<p><img src="https://s2.loli.net/2023/03/06/rye7kibtjhFXTUx.jpg" alt="img"></p>
-<hr>
-<h2 id="了解Socket技术"><a href="#了解Socket技术" class="headerlink" title="了解Socket技术"></a>了解Socket技术</h2><p>通过Socket技术（它是计算机之间进行<strong>通信</strong>的<strong>一种约定</strong>或一种方式），我们就可以实现两台计算机之间的通信，Socket也被翻译为<code>套接字</code>，是操作系统底层提供的一项通信技术，它支持TCP和UDP。而Java就对socket底层支持进行了一套完整的封装，我们可以通过Java来实现Socket通信。</p>
-<p>要实现Socket通信，我们必须创建一个数据发送者和一个数据接收者，也就是客户端和服务端，我们需要提前启动服务端，来等待客户端的连接，而客户端只需要随时启动去连接服务端即可！</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//服务端</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">    <span class="keyword">try</span>(<span class="type">ServerSocket</span> <span class="variable">server</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ServerSocket</span>(<span class="number">8080</span>))&#123;    <span class="comment">//将服务端创建在端口8080上</span></span><br><span class="line">        System.out.println(<span class="string">&quot;正在等待客户端连接...&quot;</span>);</span><br><span class="line">        <span class="type">Socket</span> <span class="variable">socket</span> <span class="operator">=</span> server.accept();  <span class="comment">//当没有客户端连接时，线程会阻塞，直到有客户端连接为止</span></span><br><span class="line">        System.out.println(<span class="string">&quot;客户端已连接，IP地址为：&quot;</span>+socket.getInetAddress().getHostAddress());</span><br><span class="line">    &#125;<span class="keyword">catch</span> (IOException e)&#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//客户端</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">    <span class="keyword">try</span> (<span class="type">Socket</span> <span class="variable">socket</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Socket</span>(<span class="string">&quot;localhost&quot;</span>, <span class="number">8080</span>))&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;已连接到服务端！&quot;</span>);</span><br><span class="line">    &#125;<span class="keyword">catch</span> (IOException e)&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;服务端连接失败！&quot;</span>);</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>实际上它就是一个TCP连接的建立过程：</p>
-<p><img src="https://s2.loli.net/2023/07/22/N4ytU8MqTxVL26X.png" alt="image-20230722153750072"></p>
-<p>一旦TCP连接建立，服务端和客户端之间就可以相互发送数据，直到客户端主动关闭连接。当然，服务端不仅仅只可以让一个客户端进行连接，我们可以尝试让服务端一直运行来不断接受客户端的连接：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">    <span class="keyword">try</span>(<span class="type">ServerSocket</span> <span class="variable">server</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ServerSocket</span>(<span class="number">8080</span>))&#123;    <span class="comment">//将服务端创建在端口8080上</span></span><br><span class="line">        System.out.println(<span class="string">&quot;正在等待客户端连接...&quot;</span>);</span><br><span class="line">        <span class="keyword">while</span> (<span class="literal">true</span>)&#123;   <span class="comment">//无限循环等待客户端连接</span></span><br><span class="line">            <span class="type">Socket</span> <span class="variable">socket</span> <span class="operator">=</span> server.accept();</span><br><span class="line">            System.out.println(<span class="string">&quot;客户端已连接，IP地址为：&quot;</span>+socket.getInetAddress().getHostAddress());</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;<span class="keyword">catch</span> (IOException e)&#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>现在我们就可以多次去连接此服务端了。</p>
-<h2 id="使用Socket进行数据传输"><a href="#使用Socket进行数据传输" class="headerlink" title="使用Socket进行数据传输"></a>使用Socket进行数据传输</h2><p>通过Socket对象，我们就可以获取到对应的I&#x2F;O流进行网络数据传输：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="keyword">try</span> (<span class="type">Socket</span> <span class="variable">socket</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Socket</span>(<span class="string">&quot;localhost&quot;</span>, <span class="number">8080</span>);</span><br><span class="line">             <span class="type">Scanner</span> <span class="variable">scanner</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in))&#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;已连接到服务端！&quot;</span>);</span><br><span class="line">            <span class="type">OutputStream</span> <span class="variable">stream</span> <span class="operator">=</span> socket.getOutputStream();</span><br><span class="line">            <span class="type">OutputStreamWriter</span> <span class="variable">writer</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">OutputStreamWriter</span>(stream);  <span class="comment">//通过转换流来帮助我们快速写入内容</span></span><br><span class="line">            System.out.println(<span class="string">&quot;请输入要发送给服务端的内容：&quot;</span>);</span><br><span class="line">            <span class="type">String</span> <span class="variable">text</span> <span class="operator">=</span> scanner.nextLine();</span><br><span class="line">            writer.write(text+<span class="string">&#x27;\n&#x27;</span>);   <span class="comment">//因为对方是readLine()这里加个换行符</span></span><br><span class="line">            writer.flush();</span><br><span class="line">            System.out.println(<span class="string">&quot;数据已发送：&quot;</span>+text);</span><br><span class="line">        &#125;<span class="keyword">catch</span> (IOException e)&#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;服务端连接失败！&quot;</span>);</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;<span class="keyword">finally</span> &#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;客户端断开连接！&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">    <span class="keyword">try</span>(<span class="type">ServerSocket</span> <span class="variable">server</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ServerSocket</span>(<span class="number">8080</span>))&#123;    <span class="comment">//将服务端创建在端口8080上</span></span><br><span class="line">        System.out.println(<span class="string">&quot;正在等待客户端连接...&quot;</span>);</span><br><span class="line">        <span class="type">Socket</span> <span class="variable">socket</span> <span class="operator">=</span> server.accept();</span><br><span class="line">        System.out.println(<span class="string">&quot;客户端已连接，IP地址为：&quot;</span>+socket.getInetAddress().getHostAddress());</span><br><span class="line">        <span class="type">BufferedReader</span> <span class="variable">reader</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">BufferedReader</span>(<span class="keyword">new</span> <span class="title class_">InputStreamReader</span>(socket.getInputStream()));  <span class="comment">//通过</span></span><br><span class="line">        System.out.print(<span class="string">&quot;接收到客户端数据：&quot;</span>);</span><br><span class="line">        System.out.println(reader.readLine());</span><br><span class="line">      	socket.close();   <span class="comment">//和服务端TCP连接完成之后，记得关闭socket</span></span><br><span class="line">    &#125;<span class="keyword">catch</span> (IOException e)&#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>同理，既然服务端可以读取客户端的内容，客户端也可以在发送后等待服务端给予响应：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">    <span class="keyword">try</span> (<span class="type">Socket</span> <span class="variable">socket</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Socket</span>(<span class="string">&quot;localhost&quot;</span>, <span class="number">8080</span>);</span><br><span class="line">         <span class="type">Scanner</span> <span class="variable">scanner</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in))&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;已连接到服务端！&quot;</span>);</span><br><span class="line">        <span class="type">OutputStream</span> <span class="variable">stream</span> <span class="operator">=</span> socket.getOutputStream();</span><br><span class="line">        <span class="type">OutputStreamWriter</span> <span class="variable">writer</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">OutputStreamWriter</span>(stream);  <span class="comment">//通过转换流来帮助我们快速写入内容</span></span><br><span class="line">        System.out.println(<span class="string">&quot;请输入要发送给服务端的内容：&quot;</span>);</span><br><span class="line">        <span class="type">String</span> <span class="variable">text</span> <span class="operator">=</span> scanner.nextLine();</span><br><span class="line">        writer.write(text+<span class="string">&#x27;\n&#x27;</span>);   <span class="comment">//因为对方是readLine()这里加个换行符</span></span><br><span class="line">        writer.flush();</span><br><span class="line">        System.out.println(<span class="string">&quot;数据已发送：&quot;</span>+text);</span><br><span class="line">        <span class="type">BufferedReader</span> <span class="variable">reader</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">BufferedReader</span>(<span class="keyword">new</span> <span class="title class_">InputStreamReader</span>(socket.getInputStream()));</span><br><span class="line">        System.out.println(<span class="string">&quot;收到服务器返回：&quot;</span>+reader.readLine());</span><br><span class="line">    &#125;<span class="keyword">catch</span> (IOException e)&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;服务端连接失败！&quot;</span>);</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125;<span class="keyword">finally</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;客户端断开连接！&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">    <span class="keyword">try</span>(<span class="type">ServerSocket</span> <span class="variable">server</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ServerSocket</span>(<span class="number">8080</span>))&#123;    <span class="comment">//将服务端创建在端口8080上</span></span><br><span class="line">        System.out.println(<span class="string">&quot;正在等待客户端连接...&quot;</span>);</span><br><span class="line">        <span class="type">Socket</span> <span class="variable">socket</span> <span class="operator">=</span> server.accept();</span><br><span class="line">        System.out.println(<span class="string">&quot;客户端已连接，IP地址为：&quot;</span>+socket.getInetAddress().getHostAddress());</span><br><span class="line">        <span class="type">BufferedReader</span> <span class="variable">reader</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">BufferedReader</span>(<span class="keyword">new</span> <span class="title class_">InputStreamReader</span>(socket.getInputStream()));  <span class="comment">//通过</span></span><br><span class="line">        System.out.print(<span class="string">&quot;接收到客户端数据：&quot;</span>);</span><br><span class="line">        System.out.println(reader.readLine());</span><br><span class="line">        <span class="type">OutputStreamWriter</span> <span class="variable">writer</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">OutputStreamWriter</span>(socket.getOutputStream());</span><br><span class="line">        writer.write(<span class="string">&quot;已收到！&quot;</span>);</span><br><span class="line">        writer.flush();</span><br><span class="line">    &#125;<span class="keyword">catch</span> (IOException e)&#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>我们可以手动关闭单向的流：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">socket.shutdownOutput();  <span class="comment">//关闭输出方向的流</span></span><br><span class="line">socket.shutdownInput();  <span class="comment">//关闭输入方向的流</span></span><br></pre></td></tr></table></figure>
-
-<p>如果我们不希望服务端等待太长的时间，我们可以通过调用<code>setSoTimeout()</code>方法来设定IO超时时间：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">socket.setSoTimeout(<span class="number">3000</span>);</span><br></pre></td></tr></table></figure>
-
-<p>当超过设定时间都依然没有收到客户端或是服务端的数据时，会抛出异常：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">java.net.SocketTimeoutException: Read timed out</span><br><span class="line">	at java.net.SocketInputStream.socketRead0(Native Method)</span><br><span class="line">	at java.net.SocketInputStream.socketRead(SocketInputStream.java:<span class="number">116</span>)</span><br><span class="line">	at java.net.SocketInputStream.read(SocketInputStream.java:<span class="number">171</span>)</span><br><span class="line">	at java.net.SocketInputStream.read(SocketInputStream.java:<span class="number">141</span>)</span><br><span class="line">	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:<span class="number">284</span>)</span><br><span class="line">	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:<span class="number">326</span>)</span><br><span class="line">	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:<span class="number">178</span>)</span><br><span class="line">	at java.io.InputStreamReader.read(InputStreamReader.java:<span class="number">184</span>)</span><br><span class="line">	at java.io.BufferedReader.fill(BufferedReader.java:<span class="number">161</span>)</span><br><span class="line">	at java.io.BufferedReader.readLine(BufferedReader.java:<span class="number">324</span>)</span><br><span class="line">	at java.io.BufferedReader.readLine(BufferedReader.java:<span class="number">389</span>)</span><br><span class="line">	at com.test.Main.main(Main.java:<span class="number">41</span>)</span><br></pre></td></tr></table></figure>
-
-<p>我们之前使用的都是通过构造方法直接连接服务端，那么是否可以等到我们想要的时候再去连接呢？</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span> (<span class="type">Socket</span> <span class="variable">socket</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Socket</span>(); <span class="comment">//调用无参构造不会自动连接</span></span><br><span class="line">     <span class="type">Scanner</span> <span class="variable">scanner</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in))&#123; </span><br><span class="line">    socket.connect(<span class="keyword">new</span> <span class="title class_">InetSocketAddress</span>(<span class="string">&quot;localhost&quot;</span>, <span class="number">8080</span>), <span class="number">1000</span>);  <span class="comment">//手动调用connect方法进行连接</span></span><br></pre></td></tr></table></figure>
-
-<p>如果连接的双方发生意外而通知不到对方，导致一方还持有连接，这样就会占用资源，因此我们可以使用<code>setKeepAlive()</code>方法来防止此类情况发生：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">socket.setKeepAlive(<span class="literal">true</span>);</span><br></pre></td></tr></table></figure>
-
-<p>当客户端连接后，如果设置了keeplive为 true，当对方没有发送任何数据过来，超过一个时间(看系统内核参数配置)，那么我们这边会发送一个ack探测包发到对方，探测双方的TCP&#x2F;IP连接是否有效。</p>
-<p>TCP在传输过程中，实际上会有一个缓冲区用于数据的发送和接收：</p>
-<p><img src="https://s2.loli.net/2023/03/06/j7Ba4IYxQDsVyLq.jpg" alt="img"></p>
-<p>此缓冲区大小为：8192，我们可以手动调整其大小来优化传输效率：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">socket.setReceiveBufferSize(<span class="number">25565</span>);   <span class="comment">//TCP接收缓冲区</span></span><br><span class="line">socket.setSendBufferSize(<span class="number">25565</span>);    <span class="comment">//TCP发送缓冲区</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="使用Socket传输文件"><a href="#使用Socket传输文件" class="headerlink" title="使用Socket传输文件"></a>使用Socket传输文件</h2><p>既然Socket为我们提供了IO流便于数据传输，那么我们就可以轻松地实现文件传输了。</p>
-<h2 id="使用浏览器访问Socket服务器"><a href="#使用浏览器访问Socket服务器" class="headerlink" title="使用浏览器访问Socket服务器"></a>使用浏览器访问Socket服务器</h2><p>在了解了如何使用Socket传输文件后，我们来看看，浏览器是如何向服务器发起请求的：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="keyword">try</span>(<span class="type">ServerSocket</span> <span class="variable">server</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ServerSocket</span>(<span class="number">8080</span>))&#123;    <span class="comment">//将服务端创建在端口8080上</span></span><br><span class="line">            System.out.println(<span class="string">&quot;正在等待客户端连接...&quot;</span>);</span><br><span class="line">            <span class="type">Socket</span> <span class="variable">socket</span> <span class="operator">=</span> server.accept();</span><br><span class="line">            System.out.println(<span class="string">&quot;客户端已连接，IP地址为：&quot;</span>+socket.getInetAddress().getHostAddress());</span><br><span class="line">            <span class="type">InputStream</span> <span class="variable">in</span> <span class="operator">=</span> socket.getInputStream();  <span class="comment">//通过</span></span><br><span class="line">            System.out.println(<span class="string">&quot;接收到客户端数据：&quot;</span>);</span><br><span class="line">            <span class="keyword">while</span> (<span class="literal">true</span>)&#123;</span><br><span class="line">                <span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> in.read();</span><br><span class="line">                <span class="keyword">if</span>(i == -<span class="number">1</span>) <span class="keyword">break</span>;</span><br><span class="line">                System.out.print((<span class="type">char</span>) i);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;<span class="keyword">catch</span> (Exception e)&#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-<p>我们现在打开浏览器，输入<a href="http://localhost:8080或是http://127.0.0.1:8080/，来连接我们本地开放的服务器。">http://localhost:8080或是http://127.0.0.1:8080/，来连接我们本地开放的服务器。</a></p>
-<p>我们发现浏览器是无法打开这个链接的，但是我们服务端却收到了不少的信息：</p>
-<figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">GET</span> <span class="string">/ HTTP/1.1</span></span><br><span class="line"><span class="attr">Host</span>: <span class="string">127.0.0.1:8080</span></span><br><span class="line"><span class="attr">Connection</span>: <span class="string">keep-alive</span></span><br><span class="line"><span class="attr">Cache-Control</span>: <span class="string">max-age=0</span></span><br><span class="line"><span class="attr">sec-ch-ua</span>: <span class="string">&quot;Chromium&quot;;v=&quot;94&quot;, &quot;Google Chrome&quot;;v=&quot;94&quot;, &quot;;Not A Brand&quot;;v=&quot;99&quot;</span></span><br><span class="line"><span class="attr">sec-ch-ua-mobile</span>: <span class="string">?0</span></span><br><span class="line"><span class="attr">sec-ch-ua-platform</span>: <span class="string">&quot;macOS&quot;</span></span><br><span class="line"><span class="attr">Upgrade-Insecure-Requests</span>: <span class="string">1</span></span><br><span class="line"><span class="attr">User-Agent</span>: <span class="string">Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36</span></span><br><span class="line"><span class="attr">Accept</span>: <span class="string">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</span></span><br><span class="line"><span class="attr">Sec-Fetch-Site</span>: <span class="string">none</span></span><br><span class="line"><span class="attr">Sec-Fetch-Mode</span>: <span class="string">navigate</span></span><br><span class="line"><span class="attr">Sec-Fetch-User</span>: <span class="string">?1</span></span><br><span class="line"><span class="attr">Sec-Fetch-Dest</span>: <span class="string">document</span></span><br><span class="line"><span class="attr">Accept-Encoding</span>: <span class="string">gzip, deflate, br</span></span><br><span class="line"><span class="attr">Accept-Language</span>: <span class="string">zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7</span></span><br></pre></td></tr></table></figure>
-
-<p>实际上这些内容都是Http协议规定的请求头内容。HTTP是一种应用层协议，全称为超文本传输协议，它本质也是基于TCP协议进行数据传输，因此我们的服务端能够读取HTTP请求。但是Http协议并不会保持长连接，在得到我们响应的数据后会立即关闭TCP连接。</p>
-<p>既然使用的是Http连接，如果我们的服务器要支持响应HTTP请求，那么就需要按照HTTP协议的规则，返回一个规范的响应文本，首先是响应头，它至少要包含一个响应码：</p>
-<figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">HTTP/1.1</span> <span class="string">200 Accpeted</span></span><br></pre></td></tr></table></figure>
-
-<p>然后就是响应内容（注意一定要换行再写），我们尝试来编写一下支持HTTP协议的响应内容：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">    <span class="keyword">try</span>(<span class="type">ServerSocket</span> <span class="variable">server</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ServerSocket</span>(<span class="number">8080</span>))&#123;    <span class="comment">//将服务端创建在端口8080上</span></span><br><span class="line">        System.out.println(<span class="string">&quot;正在等待客户端连接...&quot;</span>);</span><br><span class="line">        <span class="type">Socket</span> <span class="variable">socket</span> <span class="operator">=</span> server.accept();</span><br><span class="line">        System.out.println(<span class="string">&quot;客户端已连接，IP地址为：&quot;</span>+socket.getInetAddress().getHostAddress());</span><br><span class="line">        <span class="type">BufferedReader</span> <span class="variable">reader</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">BufferedReader</span>(<span class="keyword">new</span> <span class="title class_">InputStreamReader</span>(socket.getInputStream()));  <span class="comment">//通过</span></span><br><span class="line">        System.out.println(<span class="string">&quot;接收到客户端数据：&quot;</span>);</span><br><span class="line">        <span class="keyword">while</span> (reader.ready()) System.out.println(reader.readLine());   <span class="comment">//ready是判断当前流中是否还有可读内容</span></span><br><span class="line">        <span class="type">OutputStreamWriter</span> <span class="variable">writer</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">OutputStreamWriter</span>(socket.getOutputStream());</span><br><span class="line">        writer.write(<span class="string">&quot;HTTP/1.1 200 Accepted\r\n&quot;</span>);   <span class="comment">//200是响应码，Http协议规定200为接受请求，400为错误的请求，404为找不到此资源（不止这些，还有很多）</span></span><br><span class="line">        writer.write(<span class="string">&quot;\r\n&quot;</span>);   <span class="comment">//在请求头写完之后还要进行一次换行，然后写入我们的响应实体（会在浏览器上展示的内容）</span></span><br><span class="line">        writer.write(<span class="string">&quot;lbwnb!&quot;</span>);</span><br><span class="line">        writer.flush();</span><br><span class="line">    &#125;<span class="keyword">catch</span> (Exception e)&#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>我们可以打开浏览器的开发者模式（这里推荐使用Chrome&#x2F;Edge浏览器，按下F12即可打开），我们来观察一下浏览器的实际请求过程。</p>
+          <p>在 JavaSE 阶段，我们学习了 I&#x2F;O 流，既然 I&#x2F;O 流如此强大，那么能否跨越不同的主机进行 I&#x2F;O 操作呢？这就要提到 Java 的网络编程了。</p>
+<p>注意：本章会涉及到计算机网络相关内容（只会讲解大致内容，不会完整的讲解计算机网络知识）</p>
+<h2 id="计算机网络基础"><a href="#计算机网络基础" class="headerlink" title="计算机网络基础"></a>计算机网络基础</h2><p>利用通信线路和通信设备，将地理位置不同的、功能独立的多台计算机互连起来，以功能完善的网络软件来实现资源共享和信息传递。</p>
+<p>（此处为摘要，完整内容可在原站查看或自行补充。）</p>
 
       
     </div>
@@ -283,7 +216,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/09/19/titian%E7%9F%A5%E8%AF%86%E5%BA%93/">
+    <link itemprop="mainEntityOfPage" href="https://yuanhuatan.github.io/2023/09/19/titian%E7%9F%A5%E8%AF%86%E5%BA%93/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -303,12 +236,19 @@
         <div class="post-meta">
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
+                <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
 
               <time title="创建时间：2023-09-19 21:10:57" itemprop="dateCreated datePublished" datetime="2023-09-19T21:10:57+08:00">2023-09-19</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2026-02-08 20:24:11" itemprop="dateModified" datetime="2026-02-08T20:24:11+08:00">2026-02-08</time>
+              </span>
 
           
 
@@ -321,7 +261,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          
+          <p>记录空间</p>
+<p>（可在此补充正文内容。）</p>
+
       
     </div>
 
@@ -340,7 +282,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/09/18/hello-world/">
+    <link itemprop="mainEntityOfPage" href="https://yuanhuatan.github.io/2023/09/18/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -360,13 +302,19 @@
         <div class="post-meta">
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
+                <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2023-09-18 23:00:58 / 修改时间：22:56:04" itemprop="dateCreated datePublished" datetime="2023-09-18T23:00:58+08:00">2023-09-18</time>
+              <time title="创建时间：2023-09-18 23:00:58" itemprop="dateCreated datePublished" datetime="2023-09-18T23:00:58+08:00">2023-09-18</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2026-02-08 20:24:09" itemprop="dateModified" datetime="2026-02-08T20:24:09+08:00">2026-02-08</time>
+              </span>
 
           
 
@@ -501,9 +449,9 @@
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2023</span>
+  <span itemprop="copyrightYear">2026</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">titian</span>
 </div>
