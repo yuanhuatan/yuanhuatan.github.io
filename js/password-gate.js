@@ -1,23 +1,23 @@
 /**
- * 前端密码门（弱保护）：未输入正确密码时显示遮罩，输入正确后本次会话可访问。
- * 密码以 SHA-256 哈希比对，不在页面中明文存储；仍无法防止会看源码/爬虫的人。
+ * 前端密码门（弱保护）：未输入正确密码时显示全屏遮罩，输入正确后本次会话可访问。
+ * 密码以 SHA-256 哈希比对；仍无法防止会看源码/爬虫的人。
  */
 (function () {
+  'use strict';
   var HASH = typeof window.BLOG_PASS_HASH === 'string' ? window.BLOG_PASS_HASH.trim() : '';
   var STORAGE_KEY = 'blog_pass';
 
   if (!HASH) return;
   if (sessionStorage.getItem(STORAGE_KEY) === HASH) return;
 
-  // 先隐藏页面，避免闪一下正文
-  document.documentElement.style.visibility = 'hidden';
-
   function showPage() {
-    document.documentElement.style.visibility = '';
     if (overlay && overlay.parentNode) overlay.parentNode.removeChild(overlay);
   }
 
   function sha256Hex(str) {
+    if (typeof crypto === 'undefined' || !crypto.subtle) {
+      return Promise.reject(new Error('需要 HTTPS 环境'));
+    }
     return crypto.subtle.digest('SHA-256', new TextEncoder().encode(str))
       .then(function (buf) {
         var arr = new Uint8Array(buf);
@@ -33,7 +33,7 @@
 
   var overlay = document.createElement('div');
   overlay.id = 'blog-password-overlay';
-  overlay.style.cssText = 'position:fixed;inset:0;background:#1a1a1a;z-index:99999;display:flex;align-items:center;justify-content:center;font-family:sans-serif;visibility:visible;';
+  overlay.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;background:#1a1a1a;z-index:2147483647;display:flex;align-items:center;justify-content:center;font-family:sans-serif;';
   overlay.innerHTML = '<div style="text-align:center;color:#eee;">' +
     '<p style="margin-bottom:12px;">请输入访问密码</p>' +
     '<input type="password" id="blog-password-input" placeholder="密码" style="padding:8px 12px;margin-right:8px;border:1px solid #555;background:#222;color:#eee;border-radius:4px;" />' +
@@ -41,11 +41,18 @@
     '<p id="blog-password-err" style="margin-top:12px;color:#c66;font-size:14px;display:none;">密码错误</p>' +
     '</div>';
 
-  function onReady() {
-    document.body.appendChild(overlay);
+  function run() {
+    var body = document.body;
+    if (!body) {
+      document.addEventListener('DOMContentLoaded', run);
+      return;
+    }
+    body.appendChild(overlay);
+
     var input = document.getElementById('blog-password-input');
     var btn = document.getElementById('blog-password-btn');
     var err = document.getElementById('blog-password-err');
+    if (!input || !btn) return;
 
     function check() {
       var raw = (input.value || '').trim();
@@ -62,6 +69,7 @@
         }
       }).catch(function () {
         err.style.display = 'block';
+        err.textContent = '验证失败，请使用 HTTPS 打开';
         btn.disabled = false;
       });
     }
@@ -73,9 +81,5 @@
     input.focus();
   }
 
-  if (document.body) {
-    onReady();
-  } else {
-    document.addEventListener('DOMContentLoaded', onReady);
-  }
+  run();
 })();

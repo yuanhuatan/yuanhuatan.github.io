@@ -1,4 +1,1 @@
-{% if config.password_protect and config.password_hash %}
-<script>window.BLOG_PASS_HASH="{{ config.password_hash }}";</script>
-<script src="{{ config.root }}js/password-gate.js"></script>
-{% endif %}
+{# 密码保护已改到 body-end.swig 注入，此处保留为空以便日后扩展 #}

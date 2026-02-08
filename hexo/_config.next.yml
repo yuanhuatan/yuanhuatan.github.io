@@ -3,9 +3,9 @@
 
 scheme: Muse
 
-# 自定义 head 注入（用于前端密码保护等）
+# 自定义注入（密码保护脚本放在 bodyEnd，确保 body 已存在）
 custom_file_path:
-  head: source/_data/head.swig
+  bodyEnd: source/_data/body-end.swig
 
 sidebar:
   position: left
